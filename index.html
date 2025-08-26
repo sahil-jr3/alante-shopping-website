@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Shop Website</title>
+    <script src="https://kit.fontawesome.com/2b2df3d916.js"></script>
+</head>
+
+<body>
+    <!-- Code for Navbar -->
+    <header class="header">
+        <a href="#" class="header-logo">
+            <i class="fas fa-shopping-basket"></i> Alante
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#recommendations">Recommendations</a>
+            <a href="#department">Products</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form" id="search">
+            <input type="search" id="search-box" placeholder="Search Here..." />
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <h3 id="cart-empty">Your cart is empty</h3>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Your Email" class="box" />
+            <input type="password" placeholder="Your Password" class="box" />
+            <p>Forget Your Password <a href="#">Click Here</a></p>
+            <p>Don't Have an Account <a href="#">Create Now</a></p>
+            <input type="submit" value="Login Now" class="btn" />
+        </form>
+    </header>
+
+    <!-- Code for the Home Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Shop <span>With</span> Style</h3>
+            <p>Get the top brands at Alante Mall</p>
+            <a href="#department" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Code for the Recommendations Section -->
+    <section id="recommendations" class="recommendations">
+        <h1 class="heading">Our<span>Recommendations</span></h1>
+        <div class="recommendations-card">
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/camera2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Latest Camera</p>
+                    <h1>
+                        AUSHA®Action Camera 4K 60FPS Video
+                    </h1>
+                    <h3>$750</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt2" onclick="show11()">Add to Cart</button>
+
+                </div>
+            </div>
+
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/smartp4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Phone</p>
+                    <h1>
+                        Samsung note 10 pro max
+                    </h1>
+                    <h3>$1000</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt8" onclick="show17()">Add to Cart</button>
+
+                </div>
+            </div>
+
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/shoe4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Causal Shoes</p>
+                    <h1>
+                        Causal shoe for regular use
+                    </h1>
+                    <h3>$20</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt12" onclick="show21()">Add to Cart</button>
+
+                </div>
+            </div>
+
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/tv2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Television</p>
+                    <h1>
+                        Mi smart tv with voice sensor 48inch display
+                    </h1>
+                    <h3>$150</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt30" onclick="show39()">Add to Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code for the Shop by Department Section -->
+    <section class="department" id="department">
+        <h1 class="heading">Shop Products by <span>Department</span></h1>
+        <div class="items">
+
+            <table class="category">
+                <tr class="row1">
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/camera.png" alt="camera">
+                            <a onclick="show1()" href="#camera">Camera</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/smartp.png" alt="smartphone">
+                            <a onclick="show2()" href="#mobile"> Moblie</a>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/shoe.png" alt="shoe">
+                            <a onclick="show3()" href="#shoe">Shoes</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/headph.png" alt="head phone">
+                            <a onclick="show4()" href="#accessories">Accessories</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/clothes.png" alt="clothes">
+                            <a onclick="show5()" href="#cloth">Clothing</a>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/laptop.png" alt="laptop">
+                            <a onclick="show6()" href="#computer">Computers</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/mouse1.png" alt="mouse">
+                            <a onclick="show7()" href="#peri">Peripherials</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/tv.png" alt="television">
+                            <a onclick="show8()" href="#tv">Television</a>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="item1">
+                            <img src="assets/images/watch.png" alt="watches">
+                            <a onclick="show9()" href="#watch">Watches</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <section class="cards" id="card1">
+            <div class="inner_card1" id="camera">
+                <div class="pic">
+                    <img src="assets/images/camera1.png" alt="">
+                </div>
+                <div class="description">
+
+                    <p>Latest Camera</p>
+                    <h1>
+                        Canon EOS 200D II 24.1MP Digital SLR Camera
+                    </h1>
+                    <h3>$500</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt1" onclick="show10()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/camera2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Latest Camera</p>
+                    <h1>
+                        AUSHA®Action Camera 4K 60FPS Video
+                    </h1>
+                    <h3>$750</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt2" onclick="show11()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/camera3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Latest Camera</p>
+                    <h1>
+                        Action Camera 24MP Photo Resolution Vlogging Camera
+                    </h1>
+                    <h3>$200</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt3" onclick="show12()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/camera4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Latest Camera</p>
+                    <h1>
+                        Canon EOS 1200D Kit EF-S 18-55 IS Digital
+                    </h1>
+                    <h3>$450</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt4" onclick="show13()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="cards" id="card2">
+            <div class="inner_card1" id="mobile">
+                <div class="pic">
+                    <img src="assets/images/smartp1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Phone</p>
+                    <h1>
+                        Apple Iphone Xs
+                    </h1>
+                    <h3>$700</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt5" onclick="show14()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/smartp2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Phone</p>
+                    <h1>
+                        Apple Iphone 11 pro max
+                    </h1>
+                    <h3>$900</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt6" onclick="show15()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/smartp3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Phone</p>
+                    <h1>
+                        Samsung note 9 pro
+                    </h1>
+                    <h3>$900</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt7" onclick="show16()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/smartp4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Phone</p>
+                    <h1>
+                        Samsung note 10 pro max
+                    </h1>
+                    <h3>$1000</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt8" onclick="show17()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="cards" id="card3">
+            <div class="inner_card1" id="shoe">
+                <div class="pic">
+                    <img src="assets/images/shoe1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Leather Shoes</p>
+                    <h1>
+                        Red Chief Men brown leather
+                    </h1>
+                    <h3>$40</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt9" onclick="show18()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/shoe2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Sport Shoes</p>
+                    <h1>
+                        Nike Air running sports shoe
+                    </h1>
+                    <h3>$70</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt10" onclick="show19()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/shoe3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Leather Shoe</p>
+                    <h1>
+                        Woodland brown leather party shoe
+                    </h1>
+                    <h3>$30</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt11" onclick="show20()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/shoe4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Causal Shoes</p>
+                    <h1>
+                        Causal shoe for regular use
+                    </h1>
+                    <h3>$20</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt12" onclick="show21()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="cards" id="card4">
+            <div class="inner_card1" id="accessories">
+                <div class="pic">
+                    <img src="assets/images/headph1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Headphone</p>
+                    <h1>
+                        Iball loud sound headphone
+                    </h1>
+                    <h3>$50</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt13" onclick="show22()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/headph2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Device Storage</p>
+                    <h1>
+                        Sandisk otg pendrive with c-type
+                    </h1>
+                    <h3>$50</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt14" onclick="show23()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/headph3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Ear phone</p>
+                    <h1>
+                        Real me bluetooth earphone series 6
+                    </h1>
+                    <h3>$50</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt15" onclick="show24()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/headph4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Cover</p>
+                    <h1>
+                        Iphone 12 pro cover with wooden texture
+                    </h1>
+                    <h3>$50</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt16" onclick="show25()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="cards" id="card5">
+            <div class="inner_card1" id="cloth">
+                <div class="pic">
+                    <img src="assets/images/clothes1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Shirts</p>
+                    <h1>
+                        Blue Color Denim Shirt
+                    </h1>
+                    <h3>$80</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt17" onclick="show26()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/clothes2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Shirts</p>
+                    <h1>
+                        Black color with crush texture shirt
+                    </h1>
+                    <h3>$50</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt18" onclick="show27()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/clothes3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>T-shirts</p>
+                    <h1>
+                        Superior daily routine T-shirt
+                    </h1>
+                    <h3>$30</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt19" onclick="show28()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/clothes4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>T-shirts</p>
+                    <h1>
+                        Yellow color Avengers t-shirt
+                    </h1>
+                    <h3>$50</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt20" onclick="show29()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="cards" id="card6">
+            <div class="inner_card1" id="computer">
+                <div class="pic">
+                    <img src="assets/images/laptop1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Laptop</p>
+                    <h1>
+                        Hp office laptop with 14 inch display
+                    </h1>
+                    <h3>$850</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt21" onclick="show30()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/laptop2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Gaming Laptop</p>
+                    <h1>
+                        Asus Gaming Laptop with 16 inch display
+                    </h1>
+                    <h3>$1000</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt22" onclick="show31()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/laptop3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Gaming Laptop</p>
+                    <h1>
+                        Lenovo Gaming laptop with 4gb Graphic card
+                    </h1>
+                    <h3>$1100</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt23" onclick="show32()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/laptop4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Gaming Laptop</p>
+                    <h1>
+                        Hp pavallion gaming laptop with 144hz refresh rate
+                    </h1>
+                    <h3>$1150</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt24" onclick="show33()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="cards" id="card7">
+            <div class="inner_card1" id="peri">
+                <div class="pic">
+                    <img src="assets/images/peri1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Mouse</p>
+                    <h1>
+                        Apple Mouse white color
+                    </h1>
+                    <h3>$70</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt25" onclick="show34()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/peri2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Gaming Keyboard</p>
+                    <h1>
+                        Asus Gaming keyboard with different multi-color
+                    </h1>
+                    <h3>$50</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt26" onclick="show35()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/peri3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Joystick</p>
+                    <h1>
+                        I-ball superior joystick
+                    </h1>
+                    <h3>$40</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt27" onclick="show36()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/peri4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Graphics</p>
+                    <h1>
+                        Nvidia getforce RTx 8GB Graphic card
+                    </h1>
+                    <h3>$75</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt28" onclick="show37()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="cards" id="card8">
+            <div class="inner_card1" id="tv">
+                <div class="pic">
+                    <img src="assets/images/tv1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Television</p>
+                    <h1>
+                        Samsung Smart tv with 52 inch display
+                    </h1>
+                    <h3>$250</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt29" onclick="show38()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/tv2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Television</p>
+                    <h1>
+                        Mi smart tv with voice sensor 48inch display
+                    </h1>
+                    <h3>$150</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt30" onclick="show39()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/tv3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Television</p>
+                    <h1>
+                        Sony Bravia 32 inch smart tv
+                    </h1>
+                    <h3>$250</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt31" onclick="show40()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/tv4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Television</p>
+                    <h1>
+                        Real me smart tv with 4k resolution
+                    </h1>
+                    <h3>$350</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt32" onclick="show41()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="cards" id="card9">
+            <div class="inner_card1" id="watch">
+                <div class="pic">
+                    <img src="assets/images/smart_watch_1.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Watch</p>
+                    <h1>
+                        Oppo smart watch with calling function
+                    </h1>
+                    <h3>$70</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt33" onclick="show42()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/smart_watch_2.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Watch</p>
+                    <h1>
+                        Apple watch series 4
+                    </h1>
+                    <h3>$250</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt34" onclick="show43()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/smart_watch_3.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Watch</p>
+                    <h1>
+                        Apple Specs series 5
+                    </h1>
+                    <h3>$450</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt35" onclick="show44()">Add to Cart</button>
+
+                </div>
+            </div>
+            <div class="inner_card1">
+                <div class="pic">
+                    <img src="assets/images/smart_watch_4.png" alt="">
+                </div>
+                <div class="description">
+                    <p>Smart Watch</p>
+                    <h1>
+                        Samsung watch series 3 with silver belt
+                    </h1>
+                    <h3>$250</h3>
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus
+                        corporis.
+                        Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde.</p>
+                    <button class="btn" onclick="show46()">Read More</button>
+                    <br>
+                    <button class="btn" id="bt36" onclick="show45()">Add to Cart</button>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="review">
+        <h1 class="heading"> Customer's <span>Review</span> </h1>
+        <div class="testimonials">
+            <div class="box">
+                <img src="assets/images/face-1.jpeg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est
+                    maxime ad tempore quasi tenetur.</p>
+                <h3>Lorem Ipsum</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assets/images/face-2.jpeg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est
+                    maxime ad tempore quasi tenetur.</p>
+                <h3>Lorem Ipsum</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assets/images/face-3.jpeg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est
+                    maxime ad tempore quasi tenetur.</p>
+                <h3>Lorem Ipsum</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-block">
+            <div class="left-part">
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-at"></i>
+                <i class="fas fa-mail-bulk"></i>
+            </div>
+            <form action="/">
+                <h1>Write a Review For Us!</h1>
+                <div class="info">
+                    <input class="fname" type="text" name="name" placeholder="Full name">
+                    <input type="text" name="name" placeholder="Email">
+                    <input type="text" name="name" placeholder="Phone number">
+                </div>
+                <p>Message</p>
+                <div>
+                    <textarea rows="4"></textarea>
+                </div>
+                <button class="btn" type="submit" href="#">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Code for the footer section -->
+    <footer class="footer" id="contact">
+        <div class="row">
+            <div class="col">
+                <h1 class="footer-logo">Alante Mall</h1>
+                <p>Visit again for anything you need we will try to provide you the best service.</p>
+            </div>
+            <div class="col">
+                <h2>Office <div class="underline"><span></span></div>
+                </h2>
+                <p>Opp. Nalanda Complex</p>
+                <p>IIT Kharagpur, Kharagpur</p>
+                <p>West Bengal, India <br /> PIN - 721302</p>
+                <a href="mailto:care@alantemalls.com">
+                    <p class="email-id">care@alantemalls.com</p>
+                </a>
+                <a href="tel:1800-100-1100">
+                    <h4>1800-100-1100</h4>
+                </a>
+            </div>
+            <div class="col">
+                <h2>
+                    Links <div class="underline"><span></span></div>
+                </h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                    <li><a href="#department">Products</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="./quiz/index.html" target="_blank">Play Quiz</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2 class="h2-footer">Newsletter <div class="underline"><span></span></div>
+                </h2>
+                <form>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your Email " required>
+                    <button type="submit" name="button"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/dhanraj.kumar.3110" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="tel:+91-9162565984"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/dhanraj.kumar.3110/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="copyrights-section">
+            <p class="copyright">Alante Mall Pvt. Ltd. © 2022 – All Rights Reserved</p>
+            <div class="privacy-policy">
+                <p class="conditions">| <a href="https://restaurantbluepepper.com/terms-and-conditions/"
+                        target="_blank">Terms and Conditions</a> |</p>
+                <p class="privacy"><a href="https://loremipsum.io/privacy-policy/" target="_blank">Privacy Policy</a> |
+                </p>
+            </div>
+
+        </div>
+        <a id="arrow-top" href="#home">
+            <div class="fas fa-arrow-up" id="arrow-top"></div>
+        </a>
+
+    </footer>
+
+    <!-- Code for the Modal Box -->
+    <div class="modal-content" id="modal">
+        <div class="modal-body">
+            <span class="close">&times;</span>
+            <p class="modal-text">Item Added to Cart</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

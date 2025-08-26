@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz - Alante</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="info-box" id="info-box">
+        <div class="info-title">
+            <span>Lets Look at the Rules</span>
+        </div>
+        <div class="info-list">
+            <div class="info">1. Your will only have <span>15 Seconds</span> for each question.</div>
+            <div class="info">2. Once you select your answer you can't reselect.</div>
+            <div class="info">3. You can't select after the time goes off.</div>
+            <div class="info">4. You can't exit while playing the quiz.</div>
+        </div>
+
+        <div class="buttons">
+            <button id="quit-btn1" class="quit">Exit</button>
+            <button class="continue" id="continue">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz-box" id="quiz-box">
+        <header>
+            <div class="title">
+                Alante Quiz
+            </div>
+            <div class="timer">
+                <div class="time-text">Time Left:</div>
+                <div class="timer-sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="ques-text" id="ques-text">
+                <!-- Questions -->
+            </div>
+            <div class="option-list">
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="total-ques">
+                <!-- <span>
+                <p>2</p> of <p>5</p>Questions
+            </span> -->
+            </div>
+            <button class="next-btn" id="next-btn">Next</button>
+        </footer>
+    </div>
+
+    <div class="result-box" id="result-box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete-text">Hurray! You have completed the quiz.</div>
+        <div class="score-text">
+            <!-- <span>and sorry, you got only <p>2</p> out of <p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="quit" id="quit-btn2">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>
